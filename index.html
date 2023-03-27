@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><script>((function() {var callbacks = [],timeLimit = 50,open = false;setInterval(loop, 1);return {addListener: function(fn) {callbacks.push(fn);},cancleListenr: function(fn) {callbacks = callbacks.filter(function(v) {return v !== fn;});}}
+function loop() {var startTime = new Date();debugger;if (new Date() - startTime > timeLimit) {if (!open) {callbacks.forEach(function(fn) {fn.call(null);});}open = true;window.stop();alert('你真坏，请关闭控制台！');document.body.innerHTML = "";} else {open = false;}}})()).addListener(function() {window.location.reload();});</script><script>function toDevtools(){
+  let num = 0; 
+  let devtools = new Date();
+  devtools.toString = function() {
+    num++;
+    if (num > 1) {
+        alert('请关闭控制台')
+        window.location.href = "about:blank"
+        blast();
+    }
+  }
+  console.log('', devtools);
+}
+toDevtools();
+</script><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>柠木&amp;柚屿 - 愿每一岁都能活在自己的热爱里</title><meta name="author" content="柠木"><meta name="copyright" content="柠木"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="愿每一岁都能活在自己的热爱里">
+<meta property="og:type" content="website">
+<meta property="og:title" content="柠木&amp;柚屿">
+<meta property="og:url" content="https://sweetheart-dyf.github.io/index.html">
+<meta property="og:site_name" content="柠木&amp;柚屿">
+<meta property="og:description" content="愿每一岁都能活在自己的热爱里">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://sweetheart-dyf.github.io/img/%E5%A4%B4%E5%83%8F.jpg">
+<meta property="article:author" content="柠木">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sweetheart-dyf.github.io/img/%E5%A4%B4%E5%83%8F.jpg"><link rel="shortcut icon" href="/img/%E5%A4%B4%E5%83%8F.jpg"><link rel="canonical" href="https://sweetheart-dyf.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 柠木","link":"链接: ","source":"来源: 柠木&柚屿","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '柠木&柚屿',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-27 21:21:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/readPercent.css"><div id="myscoll"></div><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/%E5%A4%B4%E5%83%8F.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 学习</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/c-learning/"><i class="fa-fw fas fa-c"></i><span> C语言</span></a></li><li><a class="site-page child" href="/categories/linux"><i class="fa-fw fas fa-server"></i><span> Linux</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/picture/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="柠木&amp;柚屿"><span class="site-name">柠木&amp;柚屿</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 学习</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/c-learning/"><i class="fa-fw fas fa-c"></i><span> C语言</span></a></li><li><a class="site-page child" href="/categories/linux"><i class="fa-fw fas fa-server"></i><span> Linux</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/picture/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">柠木&amp;柚屿</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/sweetheart-dyf" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:3108557710@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/27/%E6%8C%87%E9%92%88%E8%AF%A6%E8%A7%A3/" title="C语言-指针详解"><img class="post-bg" src="/img/picture/picture9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-指针详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/27/%E6%8C%87%E9%92%88%E8%AF%A6%E8%A7%A3/" title="C语言-指针详解">C语言-指针详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-27T07:02:00.000Z" title="发表于 2023-03-27 15:02:00">2023-03-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-27T12:36:00.348Z" title="更新于 2023-03-27 20:36:00">2023-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">1：指针是什么？在计算机科学中，指针是变成语言中的一个对象，利用地址，它的值直接指向电脑存储器中另一个地方的值，由于通过地址能够找到所需要的变量单元，可以说，地址指向该变量单元，因此称之为指针，意思是通过它可以找到以它为地址的内存单元
+2：指针变量指针是用来存放地址的，地址是唯一标识一块地址空间的
+指针的大小在32位平台上是4字节，在64位平台上是8字节
+1234567891011//指针#include &lt;stdio.h&gt;int main()&#123;	int a = 10;  //a为int类型，占4个字节	int * pa = &amp;a;//拿到的是a的四个字节中第一个字节的地址	//int表示类型，*pa表示是一个指针，存放地址的变量称之为指针变量	*pa = 20;	printf(&quot;%d\n&quot;, a);  //结果为20	return 0;&#125;
+
+3：指针和指针类型12345678910111213//指针和指针类型#include &lt;stdio.h&gt;int main()&#123;	int* pa;	char* pc ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/03/27/%E6%93%8D%E4%BD%9C%E7%AC%A6%E8%AF%A6%E8%A7%A3/" title="C语言-操作符详解"><img class="post-bg" src="/img/picture/picture1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-操作符详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/27/%E6%93%8D%E4%BD%9C%E7%AC%A6%E8%AF%A6%E8%A7%A3/" title="C语言-操作符详解">C语言-操作符详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-27T04:02:00.000Z" title="发表于 2023-03-27 12:02:00">2023-03-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-27T12:37:42.220Z" title="更新于 2023-03-27 20:37:42">2023-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">1：算数操作符1+，-，*，/，%
+
+对于除法，需要除数和被除数至少有一个为小数才可以结果为精确小数
+123456789101112//算数操作符#include &lt;stdio.h&gt;int main()&#123;	int a = 3 / 5;	printf(&quot;%d\n&quot;, a);  //结果为0，取整数位	float b = 6 / 5.0;//如果有一个为小数，则结果为1.20000，否则就为1.00000	printf(&quot;%f\n&quot;, b); //结果为1.00000，	//对于除法，需要除数和被除数至少有一个为小数才可以结果为精确小数	return 0;&#125;
+
+%操作符的两个数必须为整数
+12345678//算数操作符---取模#include &lt;stdio.h&gt;int main()&#123;	int a = 7 % 3;  //取模表示除后余数，7/3=2---1	printf(&quot;%d\n&quot;,a);	return 0;&#125;
+
+2：移位操作符2的二进制：000000000000 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/26/%E6%95%B0%E7%BB%84/" title="C语言-数组"><img class="post-bg" src="/img/picture/picture1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-数组"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/26/%E6%95%B0%E7%BB%84/" title="C语言-数组">C语言-数组</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-26T14:02:00.000Z" title="发表于 2023-03-26 22:02:00">2023-03-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-27T12:35:13.971Z" title="更新于 2023-03-27 20:35:13">2023-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">1：一维数组的创建和初始化1）数组的概念数组：一组相同元素类型的集合
+2）数组的创建方式123456type_t arr_name [const_n];type_t 指数组元素的类型arr_name 指数组的名字const_n 是一个 常量表达式 ，用来指定数组的大小  []里面的需要是常量，不能是变量，C99语法才支持变成数组，即数组的大小是变量gcc编译器对于C99支持
+
+12int arr[8];char ch[5];
+
+3）数组的初始化初始化即赋处值
+1234567int arr1[8] = &#123; 1,2,3,4,5,6,7,8 &#125;;  //完全初始化int arr2[] = &#123; 1,2,3,4,5,6,7,8 &#125;;  //会根据后面的值来自动确定数组的元素char ch1[5] = &#123; 1, 2, 3 &#125;;  //不完全初始化，剩下的部分使用0填充char ch2[5] = &#123; &#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27; &#125;; //字符数组初始化，后面使用0（ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/03/21/%E5%87%BD%E6%95%B0/" title="c语言-函数"><img class="post-bg" src="/img/picture/picture8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言-函数"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/21/%E5%87%BD%E6%95%B0/" title="c语言-函数">c语言-函数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-21T07:30:00.000Z" title="发表于 2023-03-21 15:30:00">2023-03-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-26T06:26:39.450Z" title="更新于 2023-03-26 14:26:39">2023-03-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">1：函数的含义维基百科对于函数的解释：子程序
+在计算机科学与技术中，子程序是一个大型程序中的某部分代码，由一个或者多个语句块组成，负责完成某项特定的任务，相对于其他的代码，具备相对的独立性
+一般会有输入参数和返回值，提供对过程的封装和细节的隐藏，这些代码通常被即成为软件库
+c语言中的函数：
+
+库函数
+自定义函数
+
+2：常用函数IO函数：输入输出函数
+字符串函数：strcmp，strlen等
+3：strcpy函数查看函数使用方法网站
+cplusplus，直接搜索函数即可
+1234567891011#define _CRT_SECURE_NO_WARNINGS 1#include &lt;stdio.h&gt;#include &lt;string.h&gt;int main()&#123;	char arr1[20] = &#123; 0 &#125;;	char arr2[] = &quot;hello world&quot;;	strcpy(arr1, arr2);  //strcpy 拷贝字符串	printf(&quot;%s&quot;, arr1);  //打印arr1字符串， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/20/goto%E8%AF%AD%E5%8F%A5/" title="c语言-goto语句"><img class="post-bg" src="/img/picture/picture4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言-goto语句"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/20/goto%E8%AF%AD%E5%8F%A5/" title="c语言-goto语句">c语言-goto语句</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-20T04:58:00.000Z" title="发表于 2023-03-20 12:58:00">2023-03-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-26T06:24:44.788Z" title="更新于 2023-03-26 14:24:44">2023-03-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">1：含义C语言中提供了可以随意滥用的goto语句和标记跳转的标号
+在某些场景下需要使用goto语句，一般应用在多层循环嵌套中，可以直接跳出到最外层循环，其他场景不建议使用
+goto语句只能在一个函数范围内跳转，不能跨函数
+2：示例12345678910111213141516171819202122232425//关机程序//只要运行起来，电脑在1分钟内关机，如果输入：取消关机，则去取消关机#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt;int main()&#123;	//shutdown -a 取消定时关机	//shutdown -s -t 60 在1分钟后关机	//system()---用来执行系统命令,头文件stdlib.h	char input[20] = &#123; 0 &#125;;	system(&quot;shutdown -s -t 60&quot;);again:	printf(&quot;电脑在1分钟后关机，输入取消关机则取消本次关机\n&quot;);	sca ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/03/12/%E7%BB%93%E6%9E%84%E4%BD%93%E8%AF%A6%E8%A7%A3/" title="C语言-结构体详解"><img class="post-bg" src="/img/picture/picture8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-结构体详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/12/%E7%BB%93%E6%9E%84%E4%BD%93%E8%AF%A6%E8%A7%A3/" title="C语言-结构体详解">C语言-结构体详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-12T08:02:00.000Z" title="发表于 2023-03-12 16:02:00">2023-03-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-27T12:37:18.385Z" title="更新于 2023-03-27 20:37:18">2023-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">1：结构是什么数组是一组相同的类型的结合
+结构体是一些值的集合，但是值的类型可以不同
+2：结构体的创建初始化与使用123456789101112131415161718192021222324252627282930313233//结构体#include &lt;stdio.h&gt;struct B&#123;	char c;	short s;	double d;&#125;;struct Stu&#123;	//结构体成员变量	struct B sb;   //结构体的成员也可以是其他结构体	char name[20]; //名字	int age; //年龄	char id[20]; //学号&#125; s1,s2;  //s1,s2也是创建的结构体变量,是全局变量int main()&#123;	struct Stu s = &#123; &#123;&#x27;w&#x27;,20,3.14&#125;,&quot;张三&quot;,20,&quot;20230327&quot;&#125;;  //使用结构体创建了一个s对象并初始化	//&#123;&#x27;w&#x27 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/12/Debian%20DLBD%E9%95%9C%E5%83%8F%E7%9A%84%E4%B8%8B%E8%BD%BD/" title="Debian镜像的下载"><img class="post-bg" src="/img/picture/picture8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Debian镜像的下载"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/12/Debian%20DLBD%E9%95%9C%E5%83%8F%E7%9A%84%E4%B8%8B%E8%BD%BD/" title="Debian镜像的下载">Debian镜像的下载</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-12T04:40:03.947Z" title="发表于 2023-03-12 12:40:03">2023-03-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-12T04:20:46.117Z" title="更新于 2023-03-12 12:20:46">2023-03-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a></span></div><div class="content">
+Gitee主页Github主页CSDN地址
+
+1：安装虚拟机首先安装一个debian任意版本的虚拟机，并给至少80G以上的硬盘空间，建议100G，镜像大小接近50G，虚拟机需要20G左右，为避免其他各种原因，建议新装一个虚拟机来下载镜像
+
+2：安装虚拟机虚拟机的安装步骤与普通虚拟机安装一致即可
+选择第二个安装，也可以选择第一个图形化安装
+
+以下部分可以根据自己需求选择，我这里直接默认
+
+
+
+后续会自动DHCP获取网络，如果获取失败，可以选择不连接网络，安装完成后在进行配置
+主机名
+
+域名
+
+root密码
+
+确认root密码
+
+创建一个新用户
+
+默认即可
+
+新用户密码
+
+确认新用户密码
+
+默认
+
+选择使用磁盘
+
+默认
+、
+选择一个分区
+
+接受更改
+
+确定
+
+等待系统进行安装
+不需要网络镜像源
+
+勾选桌面环境，桌面，ssh服务等（按空格选择取消）
+
+等待安装
+选择yes
+
+选择磁盘
+
+重启
+
+重启后进入图形界面，默认不能以root用户登录，需要以普通身份用户登录
+按键盘上的徽标键或者点击active，搜索terminal并选择进入
+
+连接到光盘。默认即可安装软件，可以按照open-vmt ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/03/11/%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5%E4%B8%8E%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/" title="C语言-分支语句与循环语句"><img class="post-bg" src="/img/picture/picture4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-分支语句与循环语句"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/11/%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5%E4%B8%8E%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/" title="C语言-分支语句与循环语句">C语言-分支语句与循环语句</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-11T09:10:00.000Z" title="发表于 2023-03-11 17:10:00">2023-03-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-27T12:37:26.612Z" title="更新于 2023-03-27 20:37:26">2023-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">
+Gitee主页Github主页CSDN地址
+
+分支语句：if switch
+循环语句：while, for ,do while
+1：if分支语句if 双分支语句
+12345678910111213#include &lt;stdio.h&gt;int main()&#123;	int age = 10;	if(age&gt;=18)     //if，esle是双分支结构		printf(&quot;成年\n&quot;);	else	&#123;		printf(&quot;未成年\n&quot;);  		//对于需要有多句内容输出，需要用&#123;&#125;包括起来，即属于else的分支	&#125;		return 0;&#125;
+
+if多分支语句
+1234567891011121314151617#include &lt;stdio.h&gt;int main()&#123;	int age = 50;	if (age &lt; 18)		printf(&quot;少年\n&quot;);     //对于多个语句。可以使用&#123;&#125;包含	else if ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/03/11/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E8%AF%A6%E8%A7%A3/" title="C语言-常见关键字与详解"><img class="post-bg" src="/img/picture/picture9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-常见关键字与详解"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/11/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E8%AF%A6%E8%A7%A3/" title="C语言-常见关键字与详解">C语言-常见关键字与详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-11T09:02:00.000Z" title="发表于 2023-03-11 17:02:00">2023-03-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-27T12:37:33.549Z" title="更新于 2023-03-27 20:37:33">2023-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">
+Gitee主页Github主页CSDN地址
+
+1：常见关键字关键字由c语言提供，不能作为变量
+
+auto 是自动的，每一个局部变量都是auto修饰的
+
+break，循环中断，中断整个循环
+
+char，修饰常变量，不能更改
+
+continue，中断当次循环
+
+default，默认
+
+do，while循环
+
+double，双精度
+
+enum，枚举
+
+extern，声明外部符号
+
+float，单精度浮点数
+
+for，循环
+
+goto ，语句
+
+register，寄存器关键字
+1register int num = 100; //建议num的值存放在寄存器中
+
+在计算机中，数据可以存放到：寄存器&gt;告诉高速缓存&gt;内存&gt;硬盘&gt;网盘（造价越高，速度越快，空间越小）
+大量频繁被使用的数据，放在寄存器中，提升效率
+
+return，返回值
+
+short，短整型
+
+signed，有符号的 10  -20，unsigned无符号的
+
+sizeof，大小
+
+static，静态
+
+union，联合体（共用体）
+
+void 无（空）
+
+
+define和include都不是关键字，都是预处理 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/03/11/%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5%EF%BC%8C%E5%87%BD%E6%95%B0%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%AC%A6/" title="c语言-选择语句，函数与操作符"><img class="post-bg" src="/img/picture/picture2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言-选择语句，函数与操作符"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/03/11/%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5%EF%BC%8C%E5%87%BD%E6%95%B0%E4%B8%8E%E6%93%8D%E4%BD%9C%E7%AC%A6/" title="c语言-选择语句，函数与操作符">c语言-选择语句，函数与操作符</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-11T08:58:00.000Z" title="发表于 2023-03-11 16:58:00">2023-03-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-12T04:21:12.020Z" title="更新于 2023-03-12 12:21:12">2023-03-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/c-learning/">c-learning</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/">C语言 c-learning</a></span></div><div class="content">
+Gitee主页Github主页CSDN地址
+
+时间顺流而下，生活逆水行舟
+选择语句不同的选择对应不同的结果
+1234567891011121314151617#include &lt;stdio.h&gt;int main()&#123;	int input=0;            //输入的值	printf(&quot;加入我们:&quot;);	printf(&quot;是否好好学习(1/0)?&quot;);	scanf(&quot;%d&quot;,&amp;input);	if (input==1)	&#123;		printf(&quot;你会找到心仪的工作\n&quot;);	&#125;   //分支	else	&#123;		printf(&quot;还需要继续加油\n&quot;);	&#125;   //分支&#123;&#125;可有可无	return 0;&#125;
+
+运行结果
+
+初识循环语句（while）需要进行重复性发生的事情
+12345678910111213141516#include &lt;stdio.h&gt;int main()&#12 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/img/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div></div><div class="author-info__name">柠木</div><div class="author-info__description">愿每一岁都能活在自己的热爱里</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/sweetheart-dyf"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/sweetheart-dyf" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:3108557710@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">偷偷许个愿：希望我喜欢的女陔子，能够永远开心，快乐</div></div><div class="card-widget" id="newYear"><div class="item-headline"><i></i><span></span></div><div class="item-content"><div id="newYear-main"><div class="mask"></div> <p class="title"></p> <div class="newYear-time"></div> <p class="today" style="text-align: right;"></p> </div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/03/27/%E6%8C%87%E9%92%88%E8%AF%A6%E8%A7%A3/" title="C语言-指针详解"><img src="/img/picture/picture9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-指针详解"/></a><div class="content"><a class="title" href="/2023/03/27/%E6%8C%87%E9%92%88%E8%AF%A6%E8%A7%A3/" title="C语言-指针详解">C语言-指针详解</a><time datetime="2023-03-27T07:02:00.000Z" title="发表于 2023-03-27 15:02:00">2023-03-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/27/%E6%93%8D%E4%BD%9C%E7%AC%A6%E8%AF%A6%E8%A7%A3/" title="C语言-操作符详解"><img src="/img/picture/picture1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-操作符详解"/></a><div class="content"><a class="title" href="/2023/03/27/%E6%93%8D%E4%BD%9C%E7%AC%A6%E8%AF%A6%E8%A7%A3/" title="C语言-操作符详解">C语言-操作符详解</a><time datetime="2023-03-27T04:02:00.000Z" title="发表于 2023-03-27 12:02:00">2023-03-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/26/%E6%95%B0%E7%BB%84/" title="C语言-数组"><img src="/img/picture/picture1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言-数组"/></a><div class="content"><a class="title" href="/2023/03/26/%E6%95%B0%E7%BB%84/" title="C语言-数组">C语言-数组</a><time datetime="2023-03-26T14:02:00.000Z" title="发表于 2023-03-26 22:02:00">2023-03-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/21/%E5%87%BD%E6%95%B0/" title="c语言-函数"><img src="/img/picture/picture8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言-函数"/></a><div class="content"><a class="title" href="/2023/03/21/%E5%87%BD%E6%95%B0/" title="c语言-函数">c语言-函数</a><time datetime="2023-03-21T07:30:00.000Z" title="发表于 2023-03-21 15:30:00">2023-03-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/20/goto%E8%AF%AD%E5%8F%A5/" title="c语言-goto语句"><img src="/img/picture/picture4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言-goto语句"/></a><div class="content"><a class="title" href="/2023/03/20/goto%E8%AF%AD%E5%8F%A5/" title="c语言-goto语句">c语言-goto语句</a><time datetime="2023-03-20T04:58:00.000Z" title="发表于 2023-03-20 12:58:00">2023-03-20</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/c-learning/"><span class="card-category-list-name">c-learning</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/linux/"><span class="card-category-list-name">linux</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/C%E8%AF%AD%E8%A8%80-c-learning/" style="font-size: 1.45em; color: rgb(141, 95, 35)">C语言 c-learning</a><a href="/tags/Linux/" style="font-size: 1.15em; color: rgb(140, 181, 48)">Linux</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">13</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-03-10T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">28.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-27T13:21:34.826Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/index.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 By 柠木</div><div class="footer_custom_text">人总是要耗光所有期待，才舍得离开</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["希望我喜欢的女孩子，能够开心快乐"])
+  } else {
+    document.getElementById("subtitle").innerHTML = '希望我喜欢的女孩子，能够开心快乐'
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/rightMenu.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script defer src="/js/cursor.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/newYear.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(/img/index.jpg);"> <a class="categoryBar-list-link" href="categories/c-learning/">c-learning</a><span class="categoryBar-list-count">12</span><span class="categoryBar-list-descr">c语言</span></li><li class="categoryBar-list-item" style="background:url(/img/2.jpg);"> <a class="categoryBar-list-link" href="categories/linux/">linux</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">Linux</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><!-- hexo injector body_end end --></body></html>
